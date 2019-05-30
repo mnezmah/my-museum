@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../index.css">
   <title>Detail page</title>
 </head>
 <body>
@@ -20,19 +21,20 @@
         <p>"This is definiteley one of the best</p>
       </section>
     </section>
-    <form onsubmit="submitComment(); return false" action=""></form>
+    <form onsubmit="submitComment(); return false"></form>
     <div class="formSection">
       <label for="name">Name:</label>
       <input type="text" id="name">
     </div>
     <div class="formSection">
       <label for="msg">Message:</label>
-      <textarea id="msg" cols="30" rows="10"></textarea>
+      <textarea id="msg"></textarea>
     </div>
     <div class="button">
       <button type="default">Post your comment</button>
     </div>
   </main>
+  <script src="detail-page.js"></script>
 </body>
 <footer>Created with ❤ by Mario</footer>
 </html>
