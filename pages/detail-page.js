@@ -1,4 +1,28 @@
 function submitComment() {
-  console.log('Helo');
+  const inputField = document.getElementById('name')
+  const name = inputField.value
+  const textArea = document.getElementById('msg')
+  const message = textArea.value
+ 
+  //creating new section
+  const comment = document.createElement('section')
+  const heading = document.createElement('h3')
+  const paragraph = document.createElement('p')
+  
+  //adjusting newly created section
+  heading.innerHTML = `${name} said:`
+  paragraph.innerHTML = message
+  comment.classList.add('comment')
+  comment.appendChild(heading)
+  comment.append(paragraph)
+
+  //displaying elements on page
+  commentSection = document.getElementById('comments')
+  console.log(commentSection)
+  commentSection.appendChild(comment)
+
+  //clearing the form
+  inputField.value = null
+  textArea.value = null
 }
 
